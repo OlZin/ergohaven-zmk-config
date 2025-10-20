@@ -25,7 +25,7 @@
             label = "MOUSE_LAYER";
             bindings = <&mo>;
             #binding-cells = <1>;
-            release-after-ms = <200>;
+            release-after-ms = <750>;
         };
 
         zip_auto_mouse: zip_auto_mouse {
@@ -145,17 +145,17 @@
             bindings = <
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE   &kp BSPC
 &kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &kp BSLH
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E    &kp RIGHT_ALT
+&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E    &kp LEFT_ALT
                                     &kp LALT              &kp LGUI            &kp LCTRL           &mo 2               &kp SPACE    &kp RET  &mo 4               &none                      &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
             >;
         };
 
         nav {
             bindings = <
-&kp ESC         &kp N1  &kp N2        &kp N3        &kp N4     &kp N5                          &kp N6              &kp N7    &kp N8         &kp N9        &kp N0     &kp DELETE
-&kp TAB         &trans  &trans        &trans        &trans     &trans                          &kp LC(LEFT_ARROW)  &kp LEFT  &kp DOWN       &kp UP        &kp RIGHT  &kp LC(RIGHT_ARROW)
-&kp LEFT_SHIFT  &none   &trans        &trans        &trans     &trans                          &kp CAPS            &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp RIGHT_ALT
-                        &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL  &trans  &kp SPACE    &kp ENTER  &mo 5               &trans    &kp LC(END)    &kp LC(HOME)
+&kp ESC         &kp N1                   &kp N2            &kp N3              &kp N4                  &kp N5                                          &kp N6              &kp N7    &kp N8         &kp N9        &kp N0     &kp DELETE
+&kp TAB         &kp RIGHT_ARROW          &kp UP_ARROW      &kp DOWN_ARROW      &kp LEFT_ARROW          &kp LC(DOWN_ARROW)                              &kp LC(LEFT_ARROW)  &kp LEFT  &kp DOWN       &kp UP        &kp RIGHT  &kp LC(RIGHT_ARROW)
+&kp LEFT_SHIFT  &kp LS(LC(RIGHT_ARROW))  &kp LS(UP_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(LC(LEFT_ARROW))  &kp LS(LC(DOWN_ARROW))                          &kp CAPS            &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp LEFT_ALT
+                                         &kp LEFT_ALT      &kp LEFT_GUI        &kp LCTRL               &trans                  &kp SPACE    &kp ENTER  &mo 5               &trans    &kp LC(END)    &kp LC(HOME)
             >;
 
             display-name = "Navigation";
@@ -196,7 +196,7 @@
         mouse {
             bindings = <
 &trans  &trans               &trans        &trans          &trans              &trans                    &trans  &trans              &trans          &trans        &trans               &trans
-&trans  &mo 7                &mkp MB3      &mkp MB2        &mkp MB1            &mo 7                     &mo 7   &mkp MB1            &mkp MB2        &mkp MB3      &mo 7                &trans
+&trans  &mo 7                &mkp MB3      &mkp MB2        &mkp MB1            &mo 7                     &mo 7   &mkp MB1            &mkp MB2        &mkp MB3      &mo 7                &kp RIGHT_ARROW
 &trans  &kp LA(RIGHT_ARROW)  &kp PAGE_UP   &kp PAGE_DOWN   &kp LA(LEFT_ARROW)  &mo 8                     &mo 8   &kp LA(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp LA(RIGHT_ARROW)  &trans
                              &kp UP_ARROW  &kp DOWN_ARROW  &trans              &trans  &trans    &trans  &trans  &trans              &kp DOWN_ARROW  &kp UP_ARROW
             >;
