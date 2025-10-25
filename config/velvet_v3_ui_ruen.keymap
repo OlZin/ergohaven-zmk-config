@@ -132,8 +132,8 @@
         en {
             bindings = <
 &kp ESC    &kp Q  &kp W     &kp E     &kp R      &kp T                        &kp Y  &kp U  &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S     &kp D     &kp F      &kp G                        &kp H  &kp J  &kp K      &kp L     &kp SEMI  &kp BSLH
-&kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B                        &kp N  &kp M  &kp COMMA  &kp DOT   &kp SQT   &kp RIGHT_ALT
+&kp TAB    &kp A  &kp S     &kp D     &kp F      &kp G                        &kp H  &kp J  &kp K      &kp L     &kp SEMI  &kp K_CONTEXT_MENU
+&kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B                        &kp N  &kp M  &kp COMMA  &kp DOT   &kp SQT   &kp LEFT_ALT
                   &kp LALT  &kp LGUI  &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &mo 3  &none  &kp LBKT   &kp RBKT
             >;
 
@@ -144,7 +144,7 @@
             display-name = "Ru";
             bindings = <
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA      &kp RU_CYRILLIC_ZE   &kp BSPC
-&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &kp BSLH
+&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                        &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE         &kp RU_CYRILLIC_ZHE  &kp K_CONTEXT_MENU
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                         &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU         &kp RU_CYRILLIC_E    &kp LEFT_ALT
                                     &kp LALT              &kp LGUI            &kp LCTRL           &mo 2               &kp SPACE    &kp RET  &mo 4               &none                      &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_HARD_SIGN
             >;
@@ -176,7 +176,7 @@
             display-name = "Symbols";
             bindings = <
 &kp ESC         &kp EXCL      &kp EQUAL      &kp PLUS    &en GRAVE  &en TILDE                          &en SQT   &en DQT   &kp MINUS   &kp UNDER           &kp RU_QMARK  &kp DELETE
-&kp TAB         &en LT        &en LBRC       &en LBKT    &kp LPAR   &kp FSLH                           &kp PIPE  &kp RPAR  &en RBKT    &kp RBRC            &en GT        &kp RU_BACKSLASH
+&kp TAB         &en LT        &en LBRC       &en LBKT    &kp LPAR   &en FSLH                           &kp PIPE  &kp RPAR  &en RBKT    &kp RBRC            &en GT        &kp RU_BACKSLASH
 &kp LEFT_SHIFT  &kp RU_COMMA  &kp RU_SEMI    &en AT      &en HASH   &kp STAR                           &en DLLR  &en AMPS  &kp PRCNT   &kp RU_COLON        &kp RU_DOT    &en CARET
                               &kp RU_NUMERO  &kp RU_DQT  &kp LCTRL  &mo 5      &kp SPACE    &kp ENTER  &trans    &trans    &kp RU_DQT  &kp RU_CYRILLIC_IO
             >;
@@ -195,10 +195,10 @@
 
         mouse {
             bindings = <
-&trans  &trans               &trans        &trans          &trans              &trans                    &trans  &trans              &trans          &trans        &trans               &trans
-&trans  &mo 7                &mkp MB3      &mkp MB2        &mkp MB1            &mo 7                     &mo 7   &mkp MB1            &mkp MB2        &mkp MB3      &mo 7                &kp RIGHT_ARROW
-&trans  &kp LA(RIGHT_ARROW)  &kp PAGE_UP   &kp PAGE_DOWN   &kp LA(LEFT_ARROW)  &mo 8                     &mo 8   &kp LA(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp LA(RIGHT_ARROW)  &trans
-                             &kp UP_ARROW  &kp DOWN_ARROW  &trans              &trans  &trans    &trans  &trans  &trans              &kp DOWN_ARROW  &kp UP_ARROW
+&trans              &trans               &trans        &trans          &trans              &trans                    &trans  &trans              &trans          &trans        &trans               &trans
+&trans              &mo 7                &mkp MB3      &mkp MB2        &mkp MB1            &mo 7                     &mo 7   &mkp MB1            &mkp MB2        &mkp MB3      &mo 7                &kp RIGHT_ARROW
+&kp K_CONTEXT_MENU  &kp LA(RIGHT_ARROW)  &kp PAGE_UP   &kp PAGE_DOWN   &kp LA(LEFT_ARROW)  &mo 8                     &mo 8   &kp LA(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp LA(RIGHT_ARROW)  &kp K_CONTEXT_MENU
+                                         &kp UP_ARROW  &kp DOWN_ARROW  &trans              &trans  &trans    &trans  &trans  &trans              &kp DOWN_ARROW  &kp UP_ARROW
             >;
 
             display-name = "Mouse";
